@@ -1,0 +1,51 @@
+.orang1 {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    float: left;
+}
+
+.adit {
+    max-width: 200px;
+}
+
+.teks-nama1 {
+    color: white;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+
+
+.cendawan{
+    max-width: 200px;
+   
+}
+
+.rama{
+    max-width: 200px;
+   
+}
+
+.krisna{
+    max-width: 200px;
+   
+}
+
+.billy{
+    max-width: 200px;
+   
+}
+
+.teks-nama{
+    padding-left: 170px;
+}
+
+
+.nama1{
+    border: 0;
+    padding: 0;
+    color: white;
+}

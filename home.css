@@ -1,0 +1,77 @@
+/*--------------------------------Basic------------------------*/
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;                        
+    margin: 0;                            
+    padding: 0;                          
+    position: relative;                   
+}
+
+/* Layout */
+header, main, section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/*------------------------------navigasi-------------------------------*/
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3E8E41;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    background-color: #2E865F;
+    transform: translateY(1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-image: linear-gradient(to bottom, #4CAF50, #F7F7F7);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    height: calc(100vh - 100px);
+    position: relative; /* Tambahkan ini untuk menggunakan posisi relatif pada section */
+}
+
+.logo {
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+}
+
+.custom-img {
+    width: 130px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: auto;
+    margin-top: 20px; /* Berikan jarak antara teks dan gambar baru */
+}

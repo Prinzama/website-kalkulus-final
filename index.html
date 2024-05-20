@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Bilangan Kompleks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="kalkulator.css">
+</head>
+
+<body>
+
+    <header style="margin-bottom: 10px;">
+        <h1 class="JudulAtas">Kalkulator Bilangan Kompleks</h1>
+        <div class="button-container">
+          <button class="button" onclick="location.href='Materi.html'">Materi</button>
+          <button class="button" onclick="location.href='beranda.html'">Home</button>
+        </div>     
+    </header>
+
+    <main>
+        <section class="panduan-awal">
+            <h2>
+                Panduan Penggunaan Kalkulator
+            </h2>
+            <p>
+                Langkah pertama     : Masukan nilai bilangan kompleks ke kotak input, jika sudah maka tekan tombol hitung.
+            </p>
+            <p>
+                Langkah kedua       : Terdapat tombol + dan - di atas grafik fungsi nya untuk zoom in dan zoom out, terdapat juga alat untuk scroll di sisi kanan dan bawah grafik
+            </p>
+        </section>
+        
+        <section id="calculator">
+            <form id="complexCalculator">
+                <input placeholder="Real 1" class="input" id="real1" name="real1" type="number" required>
+                
+                <input placeholder="Imajiner 1" class="input" id="imaginary1" name="imaginary1" type="number" required>
+                
+                <input placeholder="Real 2" class="input" id="real2" name="real2" type="number" required>
+                
+                <input placeholder="Imajiner 1" class="input" id="imaginary2" name="imaginary2" type="number" required>
+                
+                
+            <div class="pilihan">
+                <select id="operation" class="option" name="operation">
+                    <option value="add">Penjumlahan</option>
+                    <option value="subtract">Pengurangan</option>
+                    <option value="multiply">Perkalian</option>
+                    <option value="divide">Pembagian</option>
+                </select>
+                <button role="button" id="calculateBtn" class="button-name">Hitung</button>
+            </div>
+              </form>
+            <div id="result" class="bgbankai"></div>
+            <div class="zoom-button">
+              <button id="zoomInBtn" class="button-zoom"> <span class="span-zoom"> + </span>
+              </button>
+              <button id="zoomOutBtn" class="button-zoom"> <span class="span-zoom"> - </span>
+              </button>
+            </div>
+            <div id="argandContainer" class="bgbankai">
+                <canvas id="argandCanvas" width="800" height="800"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
